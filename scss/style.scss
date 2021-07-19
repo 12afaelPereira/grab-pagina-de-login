@@ -1,5 +1,6 @@
 $color-primary: #4e5bee;
 $color-secondary: #ffffff;
+$color-gray: #504f60;
 $font-primary: "Roboto", sans-serif;
 
 * {
@@ -33,9 +34,44 @@ body{
         .form {
             display: flex;
             flex-direction: column;
-    
             width: 300px;
-            padding-top: 94.21px;
+            
+            input{
+                height: 50px;
+                border: solid 2px $color-secondary;
+                border-radius: 25px;
+            }
+            
+            div{
+                position: relative;
+                label{
+                    position: absolute;
+                    left: 20px;
+                    top: 15px;
+                }
+                
+                input{
+                    width: 300px;
+                    background-color: transparent;
+                    padding-left: 50px;
+                    padding-right: 20px;
+                    font-size: 18px;
+                    color: $color-secondary;
+                }
+            }
+
+            .login{
+                margin-bottom: 18px;
+            }
+
+            .btn-submit{
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 26px;
+                background-color: $color-secondary;
+                color: $color-gray;
+            }
         }
     
         footer {

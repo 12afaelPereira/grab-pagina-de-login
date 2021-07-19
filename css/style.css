@@ -23,7 +23,38 @@ body .mobile .form {
   display: flex;
   flex-direction: column;
   width: 300px;
-  padding-top: 94.21px;
+}
+body .mobile .form input {
+  height: 50px;
+  border: solid 2px #ffffff;
+  border-radius: 25px;
+}
+body .mobile .form div {
+  position: relative;
+}
+body .mobile .form div label {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+body .mobile .form div input {
+  width: 300px;
+  background-color: transparent;
+  padding-left: 50px;
+  padding-right: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+body .mobile .form .login {
+  margin-bottom: 18px;
+}
+body .mobile .form .btn-submit {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 26px;
+  background-color: #ffffff;
+  color: #504f60;
 }
 body .mobile footer {
   margin-top: 130px;
