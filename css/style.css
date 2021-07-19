@@ -1,5 +1,71 @@
-body {
-  background-color: #4E5BEE;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body .mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4e5bee;
+}
+body .mobile .logo {
+  margin-bottom: 94.21px;
+}
+body .mobile .logo img {
+  width: 177px;
+}
+body .mobile .form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 94.21px;
+}
+body .mobile footer {
+  margin-top: 130px;
+  color: #ffffff;
+}
+body .mobile footer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+body .mobile footer a :hover {
+  color: #f6a8f6;
+}
+body .mobile footer a :visited {
+  color: #ffffff;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 834px) {
+  body {
+    display: flex;
+  }
+  body .mobile {
+    width: 44vw;
+  }
+  body .desktop {
+    display: block;
+    width: 66vw;
+    height: 100vh;
+    background-color: #f6a8f6;
+  }
+  body .desktop .desktop-image {
+    position: absolute;
+    left: 25%;
+    width: 75%;
+    height: 99%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
