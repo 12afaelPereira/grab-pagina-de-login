@@ -1,0 +1,23 @@
+{
+  "name": "grab-pagina-de-login",
+  "version": "1.0.0",
+  "description": "grab-pagina-de-login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12afaelPereira/grab-pagina-de-login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/12afaelPereira/grab-pagina-de-login/issues"
+  },
+  "homepage": "https://github.com/12afaelPereira/grab-pagina-de-login#readme",
+  "devDependencies": {
+    "sass": "^1.35.2"
+  }
+}
