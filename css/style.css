@@ -5,16 +5,21 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e5bee;
+}
 body .mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #4e5bee;
 }
 body .mobile .logo {
-  margin-bottom: 94.21px;
+  padding-top: 100px;
+  padding-bottom: 94.21px;
 }
 body .mobile .logo img {
   width: 177px;
@@ -57,7 +62,8 @@ body .mobile .form .btn-submit {
   color: #504f60;
 }
 body .mobile footer {
-  margin-top: 130px;
+  padding-top: 130px;
+  padding-bottom: 29px;
   color: #ffffff;
 }
 body .mobile footer a {
@@ -79,17 +85,27 @@ body .mobile footer a :visited {
 }
 
 @media (min-width: 834px) {
-  body {
-    display: flex;
-  }
   body .mobile {
     width: 44vw;
+  }
+  body .mobile .logo {
+    padding-top: 0px;
+  }
+  body .mobile .form .btn-submit {
+    transition: 0.3s;
+  }
+  body .mobile .form .btn-submit:hover {
+    transform: translateY(-5px);
+  }
+  body .mobile footer {
+    padding-bottom: 0px;
   }
   body .desktop {
     display: block;
     width: 66vw;
     height: 100vh;
     background-color: #f6a8f6;
+    z-index: -1;
   }
   body .desktop .desktop-image {
     position: absolute;

@@ -10,47 +10,48 @@ $font-primary: "Roboto", sans-serif;
     font-family: $font-primary;
 }
 
-body{
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $color-primary;
+
     .mobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
-        height: 100vh;
-        background-color: $color-primary;
-        
-    
-        .logo{
-            margin-bottom: 94.21px;
+
+        .logo {
+            padding-top: 100px;
+            padding-bottom: 94.21px;
 
             img {
                 width: 177px;
-                
             }
-    
         }
-    
+
         .form {
             display: flex;
             flex-direction: column;
             width: 300px;
-            
-            input{
+
+            input {
                 height: 50px;
                 border: solid 2px $color-secondary;
                 border-radius: 25px;
             }
-            
-            div{
+
+            div {
                 position: relative;
-                label{
+                label {
                     position: absolute;
                     left: 20px;
                     top: 15px;
                 }
-                
-                input{
+
+                input {
                     width: 300px;
                     background-color: transparent;
                     padding-left: 50px;
@@ -60,11 +61,11 @@ body{
                 }
             }
 
-            .login{
+            .login {
                 margin-bottom: 18px;
             }
 
-            .btn-submit{
+            .btn-submit {
                 cursor: pointer;
                 font-size: 18px;
                 font-weight: 500;
@@ -73,31 +74,30 @@ body{
                 color: $color-gray;
             }
         }
-    
-        footer {
 
-            margin-top: 130px;
+        footer {
+            padding-top: 130px;
+            padding-bottom: 29px;
+
             color: $color-secondary;
 
-            a{
+            a {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 color: $color-secondary;
                 text-decoration: none;
 
-                :hover{
+                :hover {
                     color: #f6a8f6;
                 }
 
-                :visited{
+                :visited {
                     color: $color-secondary;
                 }
             }
-
         }
     }
-
 }
 
 .desktop {
@@ -106,10 +106,26 @@ body{
 
 @media (min-width: 834px) {
     body {
-        display: flex;
-
         .mobile {
             width: 44vw;
+
+            .logo {
+                padding-top: 0px;
+            }
+
+            .form {
+                .btn-submit{
+                    transition: 0.3s;
+                }
+
+                .btn-submit:hover {
+                    transform: translateY(-5px);
+                }
+            }
+
+            footer {
+                padding-bottom: 0px;
+            }
         }
 
         .desktop {
@@ -117,11 +133,11 @@ body{
             width: 66vw;
             height: 100vh;
             background-color: rgb(246, 168, 246);
+            z-index: -1;
 
             .desktop-image {
                 position: absolute;
                 left: 25%;
-                // bottom: 0;
                 width: 75%;
                 height: 99%;
             }
