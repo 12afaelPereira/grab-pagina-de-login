@@ -50,8 +50,14 @@ body .mobile .form div input {
   font-size: 18px;
   color: #ffffff;
 }
-body .mobile .form .login {
+body .mobile .form .username {
+  color: #ffffff;
+  font-size: 14px;
   margin-bottom: 18px;
+}
+body .mobile .form .username .username-message {
+  display: none;
+  padding: 2px 20px;
 }
 body .mobile .form .btn-submit {
   cursor: pointer;

@@ -61,8 +61,15 @@ body {
                 }
             }
 
-            .login {
+            .username {
+                color: $color-secondary;
+                font-size: 14px;
                 margin-bottom: 18px;
+
+                .username-message{
+                    display: none;
+                    padding: 2px 20px;
+                }
             }
 
             .btn-submit {
