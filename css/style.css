@@ -110,7 +110,7 @@ body .mobile footer a :visited {
     display: block;
     width: 66vw;
     height: 100vh;
-    background-color: #f6a8f6;
+    background-color: #ffffff;
     z-index: -1;
   }
   body .desktop .desktop-image {
